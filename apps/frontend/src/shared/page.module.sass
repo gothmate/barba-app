@@ -1,0 +1,18 @@
+@use '../app/variables'
+
+.footer
+    @include variables.flex(center, center , column)
+    padding: 1rem
+
+.footerContainer
+    @include variables.flex(space-between, center, row)
+    width: 100vw
+    gap: 3rem
+    padding-inline: 2rem 
+    border: solid yellowgreen
+
+.info
+    @include variables.flex(space-between, center, column)
+    gap: 2rem
+
+// "container flex flex-col gap-7 py-10"
