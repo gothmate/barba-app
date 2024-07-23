@@ -13,6 +13,8 @@ export interface UserContextProps {
 
 const UserContext = createContext<UserContextProps>({} as any)
 
+export default UserContext 
+
 
 export function UserProvider({ children }: any) {
     const { get, set } = useLocalStorage()
@@ -48,10 +50,17 @@ export function UserProvider({ children }: any) {
     useEffect(() => loadingUser(), [loadingUser])
     
     return (
-        <UserContext.Provider value={{ loading, user, login, logout}}>
-        {children}
+        <UserContext.Provider
+            value={{
+                loading,
+                user,
+                login,
+                logout,
+            }}
+        >
+            {children}
         </UserContext.Provider>
     )
 }
 
-export default UserContext
+ 

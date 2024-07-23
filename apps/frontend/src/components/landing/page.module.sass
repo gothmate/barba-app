@@ -1,0 +1,35 @@
+@use '../../app/variables'
+
+.titleContainer
+    position: relative
+    height: 700px
+
+.cover
+    object: cover
+    border: solid pink
+
+.menuGroup
+    @include variables.flex(none, center, column)
+    // position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: variables.$background-end-rgb
+    border: solid pink
+
+.menuText
+    @include variables.flex(center, center, column)
+    flex: 1
+    gap: 5px
+    z-index: 50
+    border: solid
+    & .h1
+        @include variables.flex(none, center, column)
+        color: #973
+        
+    
+
+@media (min-width: 768px)
+    background: variables.$primary-glow
+    
