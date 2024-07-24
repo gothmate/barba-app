@@ -3,5 +3,6 @@
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnType": true,
   "files.autoSave": "onFocusChange",
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "prettier.semi": false
 }
