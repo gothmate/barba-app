@@ -20,9 +20,7 @@ export default function TituloSlogan() {
                             Lendárias
                         </span>
                     </h1>
-                    <p className="w-96 text-center text-zinc-400 text-base sm:text-lg font-extralight">
-                        🤘 Seu estilo é o nosso rock! 🤘
-                    </p>
+                    
                     <Link
                         href="/agendamento"
                         className="

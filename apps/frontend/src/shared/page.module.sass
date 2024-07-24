@@ -7,8 +7,6 @@
 
 .footer
     @include variables.flex(center, center , column)
-    position: fixed
-    bottom: 0
     padding: 1rem
     background: variables.$secondary-glow
 
@@ -63,6 +61,14 @@
 
 .barberName
     height: max-content
+    & .text
+        font-size: 1.2rem
+        font-weight: 200
+        color: variables.$primary-glow
+
+.header
+    @include variables.flex(center, center, column)
+    padding: 1rem
 
 @media(max-width: 700px)
     .img
@@ -81,4 +87,7 @@
         font-size: 0.7rem
     .social
         gap: 0.3rem 
-        
+    
+    .barberName
+        & .text
+            font-size: 1rem

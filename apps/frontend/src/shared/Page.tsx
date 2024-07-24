@@ -1,4 +1,4 @@
-import Footer from "./Footer"
+import Footer from './Footer'
 import style from './page.module.sass'
 
 export interface PageProps {
@@ -7,7 +7,9 @@ export interface PageProps {
 export default function Page(props: PageProps) {
     return (
         <div className={style.page}>
-            <main>{props.children}</main>
+            <main>
+                {props.children}
+            </main>
             <Footer />
         </div>
     )

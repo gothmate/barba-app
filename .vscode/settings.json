@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnType": true,
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on"
+}

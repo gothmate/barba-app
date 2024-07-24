@@ -1,11 +1,11 @@
-import React from "react";
-import Page from "../../../shared/Page"
-import Menu from "../../../shared/Menu";
+import React from "react"
+import Menu from "@/shared/Menu"
+import TitleSlogan from "@/components/landing/TitleSlogan";
 
 export default function Home() {
   return (
-    <Page>
-      <Menu />
-    </Page>
+    <>
+        <TitleSlogan />
+    </>
   );
 }

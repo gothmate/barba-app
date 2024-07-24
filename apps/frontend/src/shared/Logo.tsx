@@ -13,7 +13,7 @@ export default function Logo() {
                 className={style.img} 
             />
             <div className={style.barberName}>
-                <span className="text-xl sm:text-2xl font-extralight leading-6 tracking-widest text-gradient">
+                <span className={style.text}>
                     Barbearia do DG
                 </span>
             </div>
